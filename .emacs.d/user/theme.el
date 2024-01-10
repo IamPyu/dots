@@ -8,8 +8,16 @@
 (quick-use-package nordic-night-theme)
 (quick-use-package gruber-darker-theme)
 (quick-use-package mindre-theme)
+(quick-use-package modus-themes)
+(quick-use-package catppuccin-theme)
 
-(load-theme 'nordic-midnight t)
+(load-theme 'gruber-darker t)
+
+;; (use-package doom-modeline
+;;   :straight t
+;;   :ensure t
+;;   :config
+;;   (doom-modeline-mode))
 
 (use-package dashboard
   :straight t

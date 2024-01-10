@@ -21,6 +21,8 @@
   `(use-package ,name :straight t :ensure t))
 
 (quick-use-package neotree)
+(quick-use-package treemacs)
+
 (use-package corfu
   :straight t
   :ensure t

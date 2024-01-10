@@ -1,0 +1,18 @@
+#+TITLE: Dots
+
+Dotfiles for nix-darwin.
+
+*** Includes configurations for
+
++ Nix w/ Nix-Darwin and Home-manager
+  + Tmux configured with Home-manager
++ Emacs
+  + LSP configured with Eglot
+  + Haskell and Common Lisp REPLs
+  + Support for: Rust, C/C++, Haskell, Common Lisp, Nix, and a bit more!
++ Alacritty
++ Hammerspoon
+
+*** Also includes
+
++ Custom scripts I made.

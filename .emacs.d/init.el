@@ -31,4 +31,6 @@
 (require 'plugs)
 (require 'languages)
 (require 'keybinds)
+(require 'modes)
 (require 'theme)
+(require 'games)

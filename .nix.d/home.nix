@@ -60,5 +60,15 @@
       set-option -g prefix "C-x"
     '';
   };
+
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    nix-direnv.enable = true;
+  };
+
+  #programs.zsh.enable = true;
+  #programs.bash.enable = true;
 }
 

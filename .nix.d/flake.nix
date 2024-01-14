@@ -14,7 +14,7 @@
       system = "aarch64-darwin"; 
       hostname = "penguin";
       username = "mixer";
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs {system = "${system}";};
     in
       {
         # Build darwin flake using:

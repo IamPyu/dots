@@ -33,7 +33,9 @@ local servers = {
   hls = {},
   luau_lsp = {},
   bashls = {},
-  zls = {}
+  zls = {},
+  eslint = {},
+  omnisharp = {}
 }
 
 local mservers = {}

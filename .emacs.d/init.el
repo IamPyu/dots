@@ -22,9 +22,6 @@
 (setq-default auto-save-default nil)
 (setq-default create-lockfiles nil)
 
-;; Some more options
-;;(setq tab-always-indent 'complete)
-
 ;; Useful alias
 (defalias 'yes-or-no-p 'y-or-n-p)
 

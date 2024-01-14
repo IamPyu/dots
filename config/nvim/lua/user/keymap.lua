@@ -14,10 +14,12 @@ setkey("n", "<leader>fo", function ()
 	local file = vim.fn.input("File to open/create (Root directory is: " .. root .. "): ")
 	vim.cmd.e(file)
 end)
-
 setkey("n", "<leader>ff", ":Telescope find_files<CR>")
 setkey("n", "<leader>fg", ":Telescope git_files<CR>")
 setkey("n", "<leader>", "")
+
+-- Project
+setkey("n", "<leader>pt", ":NvimTreeToggle<CR>")
 
 return {
   setkey = setkey,

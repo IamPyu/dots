@@ -20,21 +20,59 @@
   "An alias to (use-package :straight t :ensure t)"
   `(use-package ,name :straight t :ensure t))
 
-(quick-use-package neotree)
 (quick-use-package treemacs)
+(quick-use-package counsel)
 
-(use-package corfu
+(use-package dired-sidebar
+  :straight t
+  :ensure t
+  :config
+  (defalias 'filetree 'dired-sidebar-toggle-sidebar))
+
+(use-package company
   :straight t
   :ensure t
   :init
-  (setq corfu-auto t
-	corfu-quit-no-match 'separator)
-  (global-corfu-mode))
+  (global-company-mode 1))
 
 (use-package ivy
   :straight t
   :ensure t
   :config
-  (ivy-mode))
+  (ivy-mode 1)
+  (use-package ivy-rich
+    :straight t
+    :ensure t
+    :config
+    (ivy-rich-mode 1)))
+
+(use-package switch-window
+  :straight t
+  :ensure t
+  :config
+  (global-set-key (kbd "C-x o") 'switch-window))
+
+(use-package dirvish
+  :straight t
+  :ensure t
+  :config
+  (dirvish-override-dired-mode))
+
+(use-package magit
+  :straight t
+  :ensure t)
+
+(use-package yasnippet
+  :straight t
+  :ensure t
+  :config
+  (yas-reload-all)
+  (yas-global-mode))
+
+(use-package helm
+  :straight t
+  :ensure t
+  :config
+  (helm-mode))
 
 (provide 'plugs)

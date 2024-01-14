@@ -1,8 +1,8 @@
 {self, pkgs, ...}:
 
 {
-  imports = [./modules/env.nix ./modules/brew.nix ./modules/osx.nix];
   nixpkgs.hostPlatform = "aarch64-darwin";
+  imports = [./modules/env.nix ./modules/brew.nix ./modules/osx.nix];
   services.nix-daemon.enable = true;
 
   # Nix settings
@@ -19,11 +19,11 @@
   #system.configurationRevision = self.rev or self.dirtyRev or null;
   system.stateVersion = 4;
   # Shells
-  environment.shells = [pkgs.fish];
+  environment.shells = [pkgs.zsh];
   
   # Users
   users.users.mixer = {
     home = "/Users/mixer";
-    shell = pkgs.fish;
+    shell = pkgs.zsh;
   };
 }

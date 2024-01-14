@@ -36,10 +36,10 @@
     kakoune
     git
     alacritty
-    kitty
-    fish
     direnv
     zsh
+    clojure
+    leiningen
 
     # other software
     vim
@@ -52,12 +52,13 @@
     glow
     qemu
     libtool
+    libiconv
     tree-sitter
-    spectrwm
+    vscodium
+    
 
     # programming tools
     roswell
-    pkg-config
     gnumake
     cmake
     perl
@@ -66,11 +67,9 @@
     zls
     ghc
     cabal-install
-    carp
     nodejs
-
-    # Java
-    zulu
-    gradle
+    clang
+    go
+    gopls
   ];
 }

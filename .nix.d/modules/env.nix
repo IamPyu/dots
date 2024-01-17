@@ -30,46 +30,18 @@
 
   # software
   environment.systemPackages = with pkgs; [
-    # main software
     neovim
     emacs
-    kakoune
     git
     alacritty
     direnv
     zsh
-    clojure
-    leiningen
 
-    # other software
     vim
-    luajit
     neofetch
-    starship
     minetest
     home-manager
     yazi
     glow
-    qemu
-    libtool
-    libiconv
-    tree-sitter
-    vscodium
-    
-
-    # programming tools
-    roswell
-    gnumake
-    cmake
-    perl
-    rustup
-    zig
-    zls
-    ghc
-    cabal-install
-    nodejs
-    clang
-    go
-    gopls
   ];
 }

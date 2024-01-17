@@ -56,7 +56,7 @@
   :straight t
   :ensure t
   :config
-  (dirvish-override-dired-mode))
+  (dirvish-override-dired-mode 1))
 
 (use-package magit
   :straight t
@@ -67,12 +67,18 @@
   :ensure t
   :config
   (yas-reload-all)
-  (yas-global-mode))
+  (yas-global-mode 1))
 
 (use-package helm
   :straight t
   :ensure t
   :config
-  (helm-mode))
+  (helm-mode 1))
+
+(use-package elcord
+  :straight t
+  :ensure t
+  :config
+  (elcord-mode 1))
 
 (provide 'plugs)

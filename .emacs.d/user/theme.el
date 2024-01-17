@@ -8,7 +8,7 @@
   (scroll-bar-mode -1))
 
 (set-frame-name "GNU Emacs")
-(set-frame-font "Courier New-14" nil t) ;; Do not question why I use such a font for programming!
+(set-frame-font "Iosevka-15" nil t)
 
 (quick-use-package gruber-darker-theme)
 (quick-use-package spacemacs-theme)
@@ -21,7 +21,7 @@
 (quick-use-package tao-theme)
 (quick-use-package habamax-theme)
 
-(load-theme 'spacemacs-dark t)
+(load-theme 'gruber-darker t)
 
 (quick-use-package nerd-icons)
 
@@ -55,8 +55,9 @@
 				    "https://bfdi.tv WATCH IT NOW."
 				    "hi mom"
 				    (hello-msg)))
-  (setq dashboard-center-content nil)
-  (dashboard-setup-startup-hook))
+  (setq dashboard-center-content t)
+  ;;(dashboard-setup-startup-hook)
+  )
 
 (use-package nerd-icons-completion
   :straight t

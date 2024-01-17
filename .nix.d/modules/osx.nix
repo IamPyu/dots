@@ -1,10 +1,9 @@
 {
   system.defaults.dock = {
-    autohide = true;
-    autohide-time-modifier = 1.0;
+    autohide = false;
     orientation = "left";
     magnification = true;
-    tilesize = 88;
+    tilesize = 66;
     minimize-to-application = true;
   };
 }

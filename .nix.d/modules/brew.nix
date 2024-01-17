@@ -10,6 +10,7 @@
      "firefox"
      "hammerspoon"
      "prismlauncher"
+     "visual-studio-code"
     ];
   };
 }

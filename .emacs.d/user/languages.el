@@ -10,10 +10,10 @@
 (add-hook 'prog-mode-hook 'menu-bar--display-line-numbers-mode-relative) ;; Relative line numbers
 
 ;; LSP
-(use-package eglot
+(use-package lsp-mode
   :straight t
   :ensure t
-  :hook ((rust-mode lua-mode go-mode csharp-mode) . eglot-ensure))
+  :hook ((rust-mode lua-mode go-mode csharp-mode) . lsp))
 
 ;; Awesome languages
 (quick-use-package clojure-mode)

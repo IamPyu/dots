@@ -39,7 +39,7 @@
   #
   # if you don't want to manage your shell through Home Manager.
   home.sessionVariables = {
-    EDITOR = "emacs";
+    EDITOR = "nvim";
   };
 
   # Let Home Manager install and manage itself.
@@ -52,7 +52,7 @@
     plugins = with pkgs.tmuxPlugins; [
       sensible
       weather
-      nord
+      catppuccin
     ];
     extraConfig = ''
       set -g default-terminal "xterm-256color"

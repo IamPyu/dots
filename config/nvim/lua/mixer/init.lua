@@ -1,0 +1,5 @@
+require("mixer.plugin")
+require("mixer.keymap")
+require("mixer.lsp")
+require("mixer.options")
+require("mixer.other")

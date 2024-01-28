@@ -2,10 +2,11 @@
 
 # Files
 cp -r ~/.bashrc ./.bashrc
-cp -r ~/.zshrc ./.zshrc
+cp -r ~/.zshenv ./.zshenv
+
 
 # Directorys
-cp -r ~/.nix.d ./
+cp -r ~/.zsh.d ./
 sudo cp -r ~/.emacs.d ./
 cp -r ~/.hammerspoon ./
 

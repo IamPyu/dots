@@ -11,7 +11,6 @@
      "hammerspoon"
      "prismlauncher"
      "visual-studio-code"
-     "steam"
     ];
   };
 }

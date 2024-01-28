@@ -5,7 +5,7 @@
 
   system.defaults.dock = {
     autohide = true;
-    autohide-delay = 1.0;
+    autohide-delay = 0.2;
     orientation = "left";
     magnification = true;
     tilesize = 33;

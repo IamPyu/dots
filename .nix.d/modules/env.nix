@@ -12,15 +12,18 @@
     enable = true;
     package = pkgs.emacs;
   };
+
   services.yabai = {
-    enable = false;
+    enable = true;
     package = pkgs.yabai;
     enableScriptingAddition = true;
   };
+
   services.skhd = {
     enable = true;
     package = pkgs.skhd;
   };
+
   services.karabiner-elements.enable = true;
 
   # variables
@@ -30,16 +33,8 @@
 
   # software
   environment.systemPackages = with pkgs; [
-    neovim
-    emacs
-    git
-    alacritty
     direnv
-    zsh
-
-    vim
-    neofetch
-    minetest
+    pfetch
     home-manager
     yazi
     glow

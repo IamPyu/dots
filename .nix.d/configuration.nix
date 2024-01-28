@@ -7,6 +7,7 @@
     ./modules/brew.nix 
     ./modules/osx.nix 
     ./modules/programming.nix
+    ./modules/fun.nix
   ];
 
   services.nix-daemon.enable = true;
@@ -29,6 +30,6 @@
   users.users.mixer = {
     name = "mixer";
     home = "/Users/mixer";
-    shell = pkgs.bash;
+    shell = pkgs.zsh;
   };
 }

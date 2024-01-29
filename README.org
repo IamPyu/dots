@@ -1,10 +1,10 @@
 #+TITLE: Dots
 
-Dotfiles for nix-darwin.
+Dotfiles for darwin.
 
 *** Includes configurations for
 
-+ Nix w/ Nix-Darwin and Home-manager
++ Nix w/ Nix-Darwin and Home-manager (Configuration no longer updated, I dont use Nix and Nix-darwin anymore.)
   + Tmux configured with Home-manager
 + Emacs
   + LSP configured with Eglot

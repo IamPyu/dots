@@ -11,6 +11,6 @@ cp -r ./.emacs.d/ ~/.emacs.d/
 cp -r ./.nix.d/ ~/.nix.d/
 cp -r ./.hammerspoon/ ~/.hammerspoon/
 
-
 cp -r ./.bashrc ~/.bashrc
-cp -r ./.zshrc ~/.zshrc
+cp -r ./.zsh.d/ ~/.zsh.d/
+cp -r ./.zshenv ~/.zshenv 

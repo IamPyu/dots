@@ -4,7 +4,6 @@
 cp -r ~/.bashrc ./.bashrc
 cp -r ~/.zshenv ./.zshenv
 
-
 # Directorys
 cp -r ~/.zsh.d ./
 sudo cp -r ~/.emacs.d ./

@@ -21,6 +21,5 @@
 (add-exec-path "/run/current-system/sw/bin")
 (add-exec-path "/opt/homebrew/bin")
 
-
 (require 'plugins) ;; Plugins
 (require 'options) ;; Themeing and options

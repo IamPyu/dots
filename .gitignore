@@ -2,5 +2,5 @@
 !/.emacs.d/init.el
 !/.emacs.d/early-init.el
 !/.emacs.d/custom.el
-!/.emacs.d/user
-!/.emacs.d/user/*
+!/.emacs.d/lisp
+!/.emacs.d/lisp/*

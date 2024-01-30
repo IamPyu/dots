@@ -1,0 +1,20 @@
+[font]
+size = 16
+
+[window]
+option_as_alt = "Both"
+title = "Terminal"
+dynamic_title = false
+opacity = 0.5
+
+[font.bold]
+family = "Iosevka Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Iosevka Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "Iosevka Nerd Font"
+style = "Regular"

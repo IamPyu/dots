@@ -30,7 +30,7 @@ require("catppuccin").setup({
 	no_bold = false,
 	color_overrides = {
 		all = {
-			base = "#000000",
+			--base = "#000000",
 		},
 	},
 	styles = {
@@ -43,8 +43,18 @@ require("catppuccin").setup({
 		cmp = true,
 		treesitter = true,
 		nvimtree = false,
-	},
+	}
 })
+
+require("kanagawa").setup{
+  theme = "dragon",
+  terminalColors = true,
+  commentStyle = { italic = true },
+  functionStyle = {},
+  keywordStyle = { italic = true},
+  statementStyle = { },
+  typeStyle = {}
+}
 
 local function color(theme, type)
 	local c = theme or "default"
@@ -52,4 +62,4 @@ local function color(theme, type)
 	vim.cmd("colo " .. c)
 end
 
-color("catppuccin", "dark")
+color("zenbones", "light")

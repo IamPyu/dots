@@ -12,3 +12,4 @@ cp -r ~/.hammerspoon ./
 cp -r ~/.config/alacritty ./config/
 cp -r ~/.config/fish ./config/
 cp -r ~/.config/nvim ./config/
+cp -r ~/.config/kitty ./config/

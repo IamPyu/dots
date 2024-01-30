@@ -2,6 +2,8 @@ local setkey = vim.keymap.set
 local noremap = { noremap = true }
 local leader = ";"
 
+require("which-key").setup()
+
 --Defines a "main" keybinding
 local function defkey(mode, binding, assignee, options)
 	setkey(mode, leader .. binding, assignee, options or {})

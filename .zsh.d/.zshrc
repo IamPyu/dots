@@ -8,24 +8,20 @@ source ~/.znap/znap/znap.zsh  # Start znap
 znap source zsh-users/zsh-autosuggestions
 znap source zsh-users/zsh-syntax-highlighting
 
-# a simple function to print colored text
-color(){
-  #echo -e "\e[$1m$2\e[0m"
-  echo -e "$(tput setaf $1)$2$(tput sgr0)"
-}
-
 # autoloads
 autoload -U colors && colors
 autoload -U promptinit && promptinit
 
-# the prompt
+# prompt
 name="%{$fg[green]%}%n%{$reset_color%}"
 host="%{$fg[blue]%}%m%{$reset_color%}"
+lambda="λ> " # just the end of my prompt
 
-export PROMPT="[$name@$host] λ> "
+export PROMPT="[$name@$host] $lambda"
 export RPROMPT="%{$fg[green]%}%~%{$reset_color%}"
+export PS2="$lambda"
 
-# paths and cflags
+# exports
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:$HOME/.roswell/bin"
 
@@ -33,5 +29,11 @@ export LIBRARY_PATH="$LIBRARY_PATH:/opt/homebrew/lib"
 export CPATH="$CPATH:/opt/homebrew/include"
 
 # alias
-alias ed="nvim" # Ed == Neovim now!
+alias ed="emacs" # Ed == Emacs now!
 alias tm="tmux" # tmux
+
+alias ls="ls -la"
+alias rm="rm -ri"
+alias cls="clear"
+alias cwd="pwd"
+alias reload="zsh -l"

@@ -33,11 +33,14 @@ plugins(function(use)
 	use("MunifTanjim/nui.nvim")
 	use("nvim-tree/nvim-web-devicons")
 	use("lewis6991/gitsigns.nvim")
+  use("rktjmp/lush.nvim")
 
 	-- Some nice colorschemes and other themeing utilities
 	use("nyoom-engineering/oxocarbon.nvim")
 	use("gruvbox-community/gruvbox")
 	use("catppuccin/nvim", { name = "catppuccin" })
+  use("rebelot/kanagawa.nvim")
+  use("mcchrish/zenbones.nvim")
 
 	-- Plugins
 	use("nvim-treesitter/nvim-treesitter", { build = ":TSUpdate" })
@@ -50,9 +53,8 @@ plugins(function(use)
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/vim-vsnip")
 	use("hrsh7th/cmp-vsnip")
+  use("folke/which-key.nvim")
 	use("folke/neodev.nvim")
-	use("sbdchd/neoformat")
-	use("Olical/conjure")
 end)
 
 require("nvim-treesitter.configs").setup({
